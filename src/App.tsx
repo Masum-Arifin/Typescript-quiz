@@ -45,7 +45,7 @@ const App: React.FC = () => {
       // Check answer against correct answer
       const correct = questions[number].correct_answer === answer;
       // Add score if answer is correct
-      if (correct) setScore((prev) => prev + 2);
+      if (correct) setScore((prev) => prev + 1);
       // Save the answer in the array for user answers
       const answerObject = {
         question: questions[number].question,
