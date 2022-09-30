@@ -32,7 +32,7 @@ const App: React.FC = () => {
       Difficulty.EASY
     );
     setQuestions(newQuestions);
-    setScore(12);
+    setScore(1);
     setUserAnswers([]);
     setNumber(0);
     setLoading(false);
@@ -72,7 +72,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>REACT QUI</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
             Start
