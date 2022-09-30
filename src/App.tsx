@@ -32,7 +32,7 @@ const App: React.FC = () => {
       Difficulty.EASY
     );
     setQuestions(newQuestions);
-    setScore(1);
+    setScore(12);
     setUserAnswers([]);
     setNumber(0);
     setLoading(false);
