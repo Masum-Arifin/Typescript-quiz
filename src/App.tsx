@@ -19,9 +19,9 @@ const TOTAL_QUESTIONS = 15;
 const App: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionsState[]>([]);
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(0);
   const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
-  const [score, setScore] = useState(1);
+  const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
   const startTrivia = async () => {
@@ -34,7 +34,7 @@ const App: React.FC = () => {
     setQuestions(newQuestions);
     setScore(1);
     setUserAnswers([]);
-    setNumber(1);
+    setNumber(0);
     setLoading(false);
   };
 
